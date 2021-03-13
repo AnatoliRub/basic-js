@@ -4,8 +4,6 @@ const MODERN_ACTIVITY= 15;
 const HALF_LIFE_PERIOD= 5730;
 
 module.exports = function dateSample(sampleActivity) {
-  console.log(typeof sampleActivity);
-  console.log(parseFloat(sampleActivity));
   let answer = (dateSample.arguments.length === 0) || ((typeof sampleActivity).toString().toUpperCase() !== "String".toUpperCase()) || parseFloat(sampleActivity) > 8000 || parseFloat(sampleActivity) < 1 || isNaN(parseFloat(sampleActivity))
   ?
   false
